@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    width: 100%;
+}
+
+header .container {
+    width: 100%;
+}
+
+header .container .menuToggle {
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .container nav {
+    width: 100%;
+    background: #2F7CD8;
+    padding: 10px;
+}
+
+header .container nav ul {
+    display: flex;
+}
+
+header .container nav ul li {
+    padding: 8px 20px;
+    list-style: none;
+}
+
+header .container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .container .principal {
+    width: 100%;
+}
+
+header .container .principal .foto {
+    width: 100%;
+}
+
+header .container .principal .foto img {
+    max-width: 100%;
+}
+
+header .container .principal .btnSobre a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    bottom: 75px;
+    margin-left: 75%;
+}
