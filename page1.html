@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <script>
+        //<![CDATA[
+        function right(e) {
+            if (navigator.appName == 'Netscape' && e.which == 3) {
+                alert('Prohibido clic derecho');
+                return false;
+            } else
+            if (navigator.appName == 'Microsoft Internet Explorer' &&
+                event.button == 2) {
+                alert('Prohibido clic derecho');
+                return false;
+            }
+            return true;
+        }
+        document.onmousedown = right;
+        //]]>
+        /* window.onload = function() {
+             alert('Bienvenido a esta pagina');
+         }*/
+        document.oncontextmenu = function() {
+            return false
+        }
+    </script>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <img src="img/logo.jpg" width="40" height="40">
+
+
+                    <li>
+                        <a href="./home.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="./page1.html">Figuras</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--<div id="vinic">
+        <font color="red" face="Comic Sans MS,arial">
+            <h1 align="center"><i>Da click sobre la figura geométrica </i></h1>
+            <h2 align="center"><i>que deseas conocer</i></h2>
+        </font>
+    </div>-->
+    <script>
+        window.setInterval(BlinkIt, 950);
+        var color = "red";
+
+        function BlinkIt() {
+            var blink = document.getElementById("blink");
+            color = (color == "#ffffff") ? "red" : "#ffffff";
+            blink.style.color = color;
+            blink.style.fontSize = '30px';
+        }
+    </script>
+    <center>
+        <div id="blink"> DA CLICK SOBRE LA FIGURA GEOMÉTRICA QUE DESEAS CONOCER</div>
+    </center>
+    <style>
+        #fechahoy {
+            font-size: 1.2em;
+            color: black;
+            margin: 18px;
+        }
+    </style>
+    <div id="fechahoy"></div>
+    <script>
+        var d = new Date();
+        var month = new Array(12);
+        month[0] = 'Enero';
+        month[1] = 'Febrero';
+        month[2] = 'Marzo';
+        month[3] = 'Abril';
+        month[4] = 'Mayo';
+        month[5] = 'Junio';
+        month[6] = 'Julio';
+        month[7] = 'Agosto';
+        month[8] = 'Septiembre';
+        month[9] = 'Octubre';
+        month[10] = 'Noviembre';
+        month[11] = 'Diciembre';
+        var todaysDate = +d.getDate() + ' de ' + month[d.getUTCMonth()] + ' del ' + d.getUTCFullYear();
+        document.getElementById('fechahoy').innerHTML = 'Hoy es: ' + todaysDate;
+    </script>
+</body>
+
+</html>

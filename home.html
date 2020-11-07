@@ -1,44 +1,93 @@
-<!--Pagina principal-->
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
-<head></head>
-<title>FIGURAS GEOEMTRICAS</title>
-<style type="text/css">
-    html,
-    body {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #full-screen-background-image {
-        z-index: -999;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-<body bgcolor="#E8EE13">
+<body>
+    <script>
+        //<![CDATA[
+        function right(e) {
+            if (navigator.appName == 'Netscape' && e.which == 3) {
+                alert('Prohibido clic derecho');
+                return false;
+            } else
+            if (navigator.appName == 'Microsoft Internet Explorer' &&
+                event.button == 2) {
+                alert('Prohibido clic derecho');
+                return false;
+            }
+            return true;
+        }
+        document.onmousedown = right;
+        //]]>
+        /*  window.onload = function() {
+              alert('Bienvenido a esta pagina');
+          }*/
+        document.oncontextmenu = function() {
+            return false
+        }
+    </script>
 
-    <img alt="full screen background image" src="./img/fondo3.1.jpg" id="full-screen-background-image">
-    <center>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a title="fondo" href="index1.html">
-            <img alt="fondo" src="img/fondo3.2" width="945" height="590" /></a>
-    </center>
-    </img>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <img src="img/logo.jpg" width="40" height="40">
 
 
+                    <li>
+                        <a href="./home.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="./page1.html">Figuras</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <img src="./figuras/estrella.png">
+    <img src="./figuras/trapecio.png">
+    <img src="./figuras/hexagono.png">
+    <img src="./figuras/rombo.png">
+    <img src="./figuras/pentagono.png">
+    <img src="./figuras/rectangulo.png">
+    <img src="./figuras/triangulo.png">
+    <img src="./figuras/cuadrado.png">
+    <img src="./figuras/circulo.png">
+    <img src="./figuras/estrella.png">
+    <img src="./figuras/trapecio.png">
+    <img src="./figuras/hexagono.png">
+    <img src="./figuras/rombo.png">
+    <br>
+    <img src="./figuras/pentagono.png"><img src="./img/text.PNG" style="position: absolute; right: 650;"> <img src="./figuras/estrella.png" style="position: absolute; right: 0;">
+    <br>
+    <img src="./figuras/rectangulo.png"><img src="./figuras/cuadrado.png" style="position: absolute; right: 0;">
+    <br>
+    <img src="./figuras/triangulo.png"> <img src="./figuras/circulo.png" style="position: absolute; right: 0;">
+    <br>
+    <img src="./figuras/cuadrado.png">
+    <img src="./figuras/circulo.png">
+    <img src="./figuras/estrella.png">
+    <img src="./figuras/trapecio.png">
+    <img src="./figuras/hexagono.png">
+    <img src="./figuras/rombo.png">
+    <img src="./figuras/estrella.png">
+    <img src="./figuras/trapecio.png">
+    <img src="./figuras/hexagono.png">
+    <img src="./figuras/rombo.png">
+    <img src="./figuras/pentagono.png">
+    <img src="./figuras/rectangulo.png">
+    <img src="./figuras/triangulo.png"> <img src="./img/prototipo2.PNG" width="100" height="100" style=" position:absolute;
+    bottom:5px;
+    right:10px;">
 </body>
 
 </html>
