@@ -25,9 +25,9 @@
         }
         document.onmousedown = right;
         //]]>
-        /* window.onload = function() {
-             alert('Bienvenido a esta pagina');
-         }*/
+        window.onload = function() {
+            alert('Esta pagina se actualiza constantemente, si no encuentra la figura geométrica que necesita, intentelo nuevamente en otro momento');
+        }
         document.oncontextmenu = function() {
             return false
         }
@@ -97,6 +97,35 @@
         var todaysDate = +d.getDate() + ' de ' + month[d.getUTCMonth()] + ' del ' + d.getUTCFullYear();
         document.getElementById('fechahoy').innerHTML = 'Hoy es: ' + todaysDate;
     </script>
+    <center>
+        <a title="TRIANGULO" href="./assets/figurasHtml/triangulo.html">
+            <img src="./img/fg/triangulo.PNG" width="300" height="300">
+        </a>
+        <a title="CUADRADO" href="./assets/figurasHtml/cuadrado.html">
+            <img src="./img/fg/cuadrado.PNG" width="300" height="300">
+        </a>
+        <a title="RECTANGULO" href="./assets/figurasHtml/rectangulo.html">
+            <img src="./img/fg/rectangulo.PNG" width="300" height="300">
+        </a>
+        <a title="ROMBO" href="./assets/figurasHtml/rombo.html">
+            <img src="./img/fg/rombo.png" width="300" height="300">
+        </a>
+    </center>
+    <br>
+    <center>
+        <a title="CIRCULO" href="./assets/figurasHtml/circulo.html">
+            <img src="./img/fg/circulo.png" width="300" height="300">
+        </a>
+        <a title="TRAPECIO" href="./assets/figurasHtml/trapecio.html">
+            <img src="./img/fg/trapecio.png" width="300" height="300">
+        </a>
+        <a title="PENTAGONO" href="./assets/figurasHtml/pentagono.html">
+            <img src="./img/fg/pentagono.png" width="300" height="300">
+        </a>
+        <a title="HEXAGONO" href="./assets/figurasHtml/hexagono.html">
+            <img src="./img/fg/hexagono.png" width="300" height="300">
+        </a>
+    </center>
 </body>
 
 </html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIANGULO</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script>
+        //<![CDATA[
+        function right(e) {
+            if (navigator.appName == 'Netscape' && e.which == 3) {
+                alert('Prohibido clic derecho');
+                return false;
+            } else
+            if (navigator.appName == 'Microsoft Internet Explorer' &&
+                event.button == 2) {
+                alert('Prohibido clic derecho');
+                return false;
+            }
+            return true;
+        }
+        document.onmousedown = right;
+        //]]>
+        /* window.onload = function() {
+             alert('Esta pagina se actualiza constantemente, si no encuentra la figura geométrica que necesita, intentelo nuevamente en otro momento');
+         }*/
+        document.oncontextmenu = function() {
+            return false
+        }
+    </script>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#definicion">Elementos</a>
+                    </li>
+
+                    <li>
+                        <a href="#lados">Según sus lados</a>
+                    </li>
+
+                    <li>
+                        <a href="#angulos">Según sus ángulos</a>
+                    </li>
+
+                    <li>
+                        <a href="#area">Área</a>
+                    </li>
+
+                    <li>
+                        <a href="#perimetro">Perimétro</a>
+                    </li>
+
+                    <li>
+                        <a href="../../page1.html" style="position: absolute; right: 0;">Figuras</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <font color="red" face="Comic Sans MS,arial">
+        <h1 align="center"><i>¿Qué es un Triangulo? </i></h1>
+    </font>
+    <section class="div3"></section>
+    <section id="definicion" style="background: #ffffff" class="div3">
+        <h2 align="center">Elementos</h2>
+        <p> En un triángulo se pueden diferenciar los siguientes elementos:</p><img src="../figurasG/triangulo/triangulo1.png" style="position: absolute; right: 0;">
+        <br>
+        <p><strong>*Vértices:</strong> puntos en los que confluyen dos lados. Tiene 3 vértices (A, B y C).</p>
+        <br>
+        <p><strong>*Lados:</strong> segmentos que unen dos vértices consecutivos del triángulo y que delimitan su perímetro. Tiene 3 lados (a, b y c).</p>
+        <br>
+        <p><strong>*Ángulos interiores:</strong> ángulo que forman dos lados consecutivos en el vértice en el que confluyen. Hay 3 ángulos interiores <br>(α, β y γ). Los ángulos interiores del triángulo suman 180º</p>
+        <br>
+        <p><strong>*Ángulos exteriores:</strong> ángulo de un lado con la prolongación exterior del lado consecutivo. Hay 3 ángulos exteriores (θ).<br> Los ángulos exteriores siempre suman 360º.</p>
+        <br>
+        <p><strong>*Altura de un triángulo:</strong> La altura de un triángulo (h) es el segmento perpendicular a un lado que va desde el vértice<br> opuesto a este lado (o a su prolongación). También puede entenderse como la distancia de un lado al vértice
+            opuesto. Un triángulo tiene tres alturas, según el vértice de referencia que se escoja. Las tres alturas confluyen en un punto llamado ortocentro.</p>
+        <br>
+        <br>
+    </section>
+    <section id="lados" style="background: #ffffff" class="div3">
+        <h2 align="center">Tipos de Triangulos según sus lados</h2>
+        <br>
+        <p><strong>*Triángulo equilátero: </strong>tiene todos sus lados iguales. Por tanto, sus ángulos también son los tres iguales. Es decir:</p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo2.png"><img src="../figurasG/triangulo/triangulo3.png">
+        </center>
+        <p align="center"><strong> Como todos los ángulos son iguales y suman 180º, todos son de 60º (α=β=γ=60º).</strong></p>
+        <br>
+        <p><strong>*Triángulo isósceles: </strong>tiene dos lados iguales. Por lo tanto, dos de sus ángulos también son iguales.</p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo4.png"><img src="../figurasG/triangulo/triangulo5.png">
+        </center>
+        <p align="center"><strong> El ángulo desigual β es el que forman los dos lados iguales (a y c).</strong></p>
+        <br>
+        <p><strong>*Triángulo escaleno: </strong>los tres lados son desiguales, por lo que los tres ángulos también son diferentes. Es decir:</p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo6.png"><img src="../figurasG/triangulo/triangulo7.png">
+        </center>
+        <br>
+        <br>
+    </section>
+    <section id="angulos" style="background: #ffffff" class="div3">
+        <h2 align="center">Tipos de Triangulos según sus ángulos</h2>
+        <br>
+        <p><strong>*Triángulo rectangulo: </strong>uno de sus ángulos es de 90º. Los otros dos son agudos (menores de 90º).</p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo8.png">
+        </center>
+        <br>
+        <p><strong>*Triángulo acutángulo: </strong>los tres ángulos son agudos (menores de 90º).</p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo9.png">
+        </center>
+        <br>
+        <p><strong>*Triángulo obtusángulo: </strong>uno de sus ángulos es mayor a 90º. Los otros dos son agudos (menores de 90º).</p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo10.png">
+        </center>
+        <br>
+        <br>
+    </section>
+    <section id="area" style="background: #ffffff" class="div3">
+        <h2 align="center">Área de un Triangulo</h2>
+        <p><strong>La formula general para obtener el área de un triangulo, es el siguiente:</strong></p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo11.png"><img src="../figurasG/triangulo/triangulo12png.png">
+        </center>
+        <br>
+        <br>
+    </section>
+    <section id="perimetro" style="background: #ffffff" class="div3">
+        <h2 align="center">Perímetro de un Triangulo</h2>
+        <p><strong>La formula general para obtener el perímetro de un triangulo, es el siguiente:</strong></p>
+        <center>
+            <img src="../figurasG/triangulo/triangulo13.png"><img src="../figurasG/triangulo/triangulo14.png">
+        </center>
+        <br>
+        <br>
+    </section>
+</body>
+
+</html>
