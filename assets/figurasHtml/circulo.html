@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÍRCULO</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script>
+        //<![CDATA[
+        function right(e) {
+            if (navigator.appName == 'Netscape' && e.which == 3) {
+                alert('Prohibido clic derecho');
+                return false;
+            } else
+            if (navigator.appName == 'Microsoft Internet Explorer' &&
+                event.button == 2) {
+                alert('Prohibido clic derecho');
+                return false;
+            }
+            return true;
+        }
+        document.onmousedown = right;
+        //]]>
+        /* window.onload = function() {
+             alert('Esta pagina se actualiza constantemente, si no encuentra la figura geométrica que necesita, intentelo nuevamente en otro momento');
+         }*/
+        document.oncontextmenu = function() {
+            return false
+        }
+    </script>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#definicion">Elementos</a>
+                    </li>
+
+                    <li>
+                        <a href="#area">Área</a>
+                    </li>
+
+                    <li>
+                        <a href="#perimetro">Perímetro</a>
+                    </li>
+
+                    <li>
+                        <a href="#diametro">Diámetro</a>
+                    </li>
+
+                    <li>
+                        <a href="../../page1.html" style="position: absolute; right: 0;">
+                            <---Figuras--->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section style="background: #000000" class="div3">
+        <font color="red" face="Comic Sans MS,arial">
+            <h1 align="center"><i>¿Qué es un Círculo? </i></h1>
+        </font>
+    </section>
+    <section id="definicion" style="background: #ffffff" class="div3">
+        <h2 align="center">Propiedades</h2>
+        <br>
+        <img src="../figurasG/circulo/circulo1.png" style="position: absolute; right: 0;">
+
+        <p>El círculo es una figura geométrica que se realiza trazando una curva que está siempre a la misma distancia de un punto <br>que llamamos centro.</p>
+        <br>
+        <p><strong>*Circunferencia: </strong>Es la línea curva que bordea al círculo</p>
+        <br>
+        <p><strong>*Centro: </strong>El centro del círculo (o centro de la circunferencia, mejor dicho) es el punto del cual equidistan todos los puntos.</p>
+        <br>
+        <p><strong>*Radio: </strong>El radio es un segmento del círculo que une el centro con cualquier punto de la circunferencia.</p>
+        <br>
+        <p><strong>*Diámetro: </strong>El diámetro es un segmento del círculo que une dos puntos de la circunferencia pasando por el centro y lo <br>divide en dos partes iguales. El diámetro es dos veces el radio, o lo que es lo mismo, el radio es la mitad
+            del diámetro.
+        </p>
+        <br>
+        <br>
+    </section>
+    <section id="area" style="background: #ffffff" class="div3">
+        <h2 align="center">Área de un circulo</h2>
+        <br>
+        <font size=5>
+            <p>El área del circulo se obtiene con: </p>
+        </font>
+        <center>
+            <img src="../figurasG/circulo/circulo2.png">
+            <br>
+            <img src="../figurasG/circulo/circulo4.png">
+        </center>
+        <br>
+        <br>
+    </section>
+    <section id="perimetro" style="background: #ffffff" class="div3">
+        <h2 align="center">Perímetro de un circulo</h2>
+        <br>
+        <font size=5>
+            <p>El perímetro del circulo se obtiene con: </p>
+        </font>
+        <center>
+            <img src="../figurasG/circulo/circulo3.png">
+            <br>
+            <img src="../figurasG/circulo/circulo4.png">
+        </center>
+        <br>
+        <br>
+    </section>
+    <section id="diametro" style="background: #ffffff" class="div3">
+        <h2 align="center">Diámetro de un circulo</h2>
+        <br>
+        <font size=5>
+            <p>El diámetro de un circulo se obtiene con: </p>
+        </font>
+        <center>
+            <img src="../figurasG/circulo/circulo5.png">
+            <br>
+            <img src="../figurasG/circulo/circulo4.png">
+        </center>
+        <br>
+        <br>
+    </section>
+</body>
+
+</html>

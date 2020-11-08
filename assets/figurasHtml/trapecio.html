@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAPECIO</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script>
+        //<![CDATA[
+        function right(e) {
+            if (navigator.appName == 'Netscape' && e.which == 3) {
+                alert('Prohibido clic derecho');
+                return false;
+            } else
+            if (navigator.appName == 'Microsoft Internet Explorer' &&
+                event.button == 2) {
+                alert('Prohibido clic derecho');
+                return false;
+            }
+            return true;
+        }
+        document.onmousedown = right;
+        //]]>
+        /* window.onload = function() {
+             alert('Esta pagina se actualiza constantemente, si no encuentra la figura geométrica que necesita, intentelo nuevamente en otro momento');
+         }*/
+        document.oncontextmenu = function() {
+            return false
+        }
+    </script>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#definicion">Elementos</a>
+                    </li>
+
+                    <li>
+                        <a href="#area">Área</a>
+                    </li>
+
+                    <li>
+                        <a href="#perimetro">Perímetro</a>
+                    </li>
+
+                    <li>
+                        <a href="../../page1.html" style="position: absolute; right: 0;">
+                            <---Figuras--->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section style="background: #000000" class="div3">
+        <font color="red" face="Comic Sans MS,arial">
+            <h1 align="center"><i>¿Qué es un Trapecio? </i></h1>
+        </font>
+    </section>
+    <section id="definicion" style="background: #ffffff" class="div3">
+
+        <img src="../figurasG/trapecio/trapecio1.png" style="position: absolute; right: 0;">
+        <font size=4>
+            <br>
+            <p>Un trapecio es un tipo de cuadrilátero, que es un polígono que posee cuatro lados. <br>Los cuadriláteros tienen diferentes formas, en tanto que poseen cuatro vértices y dos diagonales. <br>En ellos la suma de los ángulos interiores será igual
+                a 360º.<br><br> Los cuadriláteros se catalogan por el paralelismo de sus lados. <br>Podemos mencionar que existen los cuadriláteros paralelogramos (cuyos lados opuestos <br>son paralelos dos a dos), trapezoides (sin lados paralelos) y
+                trapecios (poseen sólo dos <br>lados opuestos paralelos). <br><br>En consecuencia, un trapecio es un cuadrilátero con dos lados opuestos paralelos, <br>con ángulos interiores que suman 360º.</p>
+        </font>
+        <br>
+        <br>
+    </section>
+    <section id="area" style="background: #ffffff" class="div3">
+        <h2 align="center">Área de un trapecio</h2>
+        <br>
+        <font size=5>
+            <p>El área de un trapecio es igual a la suma de las bases por la altura, y divido entre dos</p>
+        </font>
+        <center>
+            <img src="../figurasG/trapecio/trapecio2.png">
+        </center>
+        <br>
+        <br>
+    </section>
+    <section id="perimetro" style="background: #ffffff" class="div3">
+        <h2 align="center">Perímetro de un trapecio</h2>
+        <br>
+        <font size=5>
+            <p>El perímetro de un trapecio es la suma de sus cuatro lados, ya que pueden ser los cuatro diferentes.
+
+            </p>
+        </font>
+        <center>
+            <img src="../figurasG/trapecio/trapecio3.png">
+        </center>
+        <br>
+        <br>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMBO</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script>
+        //<![CDATA[
+        function right(e) {
+            if (navigator.appName == 'Netscape' && e.which == 3) {
+                alert('Prohibido clic derecho');
+                return false;
+            } else
+            if (navigator.appName == 'Microsoft Internet Explorer' &&
+                event.button == 2) {
+                alert('Prohibido clic derecho');
+                return false;
+            }
+            return true;
+        }
+        document.onmousedown = right;
+        //]]>
+        /* window.onload = function() {
+             alert('Esta pagina se actualiza constantemente, si no encuentra la figura geométrica que necesita, intentelo nuevamente en otro momento');
+         }*/
+        document.oncontextmenu = function() {
+            return false
+        }
+    </script>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#definicion">Elementos</a>
+                    </li>
+
+                    <li>
+                        <a href="#area">Área</a>
+                    </li>
+
+                    <li>
+                        <a href="#perimetro">Perímetro</a>
+                    </li>
+
+                    <li>
+                        <a href="../../page1.html" style="position: absolute; right: 0;">
+                            <---Figuras--->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section style="background: #000000" class="div3">
+        <font color="red" face="Comic Sans MS,arial">
+            <h1 align="center"><i>¿Qué es un Rombo? </i></h1>
+        </font>
+    </section>
+    <section id="definicion" style="background: #ffffff" class="div3">
+        <h2 align="center">Propiedades</h2>
+        <br>
+        <img src="../figurasG/rombo/rombo1.png" width="200" height="200" style="position: absolute; right: 0;">
+
+        <p>En la geometría el rombo es un paralelogramo, cuyos cuatro lados tienen igual longitud.</p>
+        <br>
+        <p>*Los cuatro lados son iguales.</p>
+        <br>
+        <p>*Los pares de ángulos opuestos son iguales.</p>
+        <br>
+        <p>*Cada dos ángulos contiguos son suplementarios (suman 1800).</p>
+        <br>
+        <p>*Sus dos diagonales se cortan en sus puntos medios.</p>
+        <br>
+        <p>*Sus dos diagonales son perpendiculares (forman un ángulo de 900).</p>
+        <br>
+        <p>*Cada diagonal es bisectriz de los ángulos cuyo vértices une (los divide en partes iguales).</p>
+        <br>
+        <br>
+    </section>
+    <section id="area" style="background: #ffffff" class="div3">
+        <h2 align="center">Área de un rombo</h2>
+        <br>
+        <p>El área del rombo se obtiene multiplicando ancho por alto (A = D por d), entonces el área del rombo será la mitad de eso:</p>
+        <br>
+        <center>
+            <img src="../figurasG/rombo/rombo2.png">
+            <img src="../figurasG/rombo/rombo3.png">
+        </center>
+        <br>
+        <br>
+    </section>
+    <section id="perimetro" style="background: #ffffff" class="div3">
+        <h2 align="center">Perímetro de un rombo</h2>
+        <br>
+        <p>Para calcular el perímetro del rombo es necesario conocer el valor de uno de sus lados (los cuatro son iguales). Conocido ese dato, el perímetro es igual a cuatro veces el valor del lado.</p>
+        <br>
+        <center>
+            <img src="../figurasG/rombo/rombo4.png">
+        </center>
+
+
+
+
+</body>
+
+</html>

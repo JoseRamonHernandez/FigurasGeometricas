@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUADRADO</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script>
+        //<![CDATA[
+        function right(e) {
+            if (navigator.appName == 'Netscape' && e.which == 3) {
+                alert('Prohibido clic derecho');
+                return false;
+            } else
+            if (navigator.appName == 'Microsoft Internet Explorer' &&
+                event.button == 2) {
+                alert('Prohibido clic derecho');
+                return false;
+            }
+            return true;
+        }
+        document.onmousedown = right;
+        //]]>
+        /* window.onload = function() {
+             alert('Esta pagina se actualiza constantemente, si no encuentra la figura geométrica que necesita, intentelo nuevamente en otro momento');
+         }*/
+        document.oncontextmenu = function() {
+            return false
+        }
+    </script>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#elementos">Elementos</a>
+                    </li>
+
+                    <li>
+                        <a href="#area">Área</a>
+                    </li>
+
+                    <li>
+                        <a href="#perimetro">Perímetro</a>
+                    </li>
+
+                    <li>
+                        <a href="../../page1.html" style="position: absolute; right: 0;">
+                            <---Figuras--->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section style="background: #000000" class="div3">
+        <font color="red" face="Comic Sans MS,arial">
+            <h1 align="center"><i>¿Qué es un Cuadrado? </i></h1>
+        </font>
+    </section>
+    <section id="elementos" style="background: #ffffff" class="div3">
+        <h2 align="center">Elementos y propiedades del cuadrado</h2>
+        <br>
+        <p><strong>*Lados: </strong>el cuadrado tiene cuatro lados (a) iguales y paralelos dos a dos.</p><img src="../figurasG/cuadrado/cuadrado.png" style="position: absolute; right: 0;">
+        <br>
+        <p><strong>*Ángulos: </strong>tiene cuatro ángulos (α) iguales y rectos de 90º. Los ángulos interiores, como en todo cuadrilátero, suman 360º.</p>
+        <br>
+        <p><strong>*Diagonales: </strong>las diagonales son segmentos que unen los vértices opuestos. Tiene dos diagonales (D1 y D2) iguales y perpendiculares. <br>Se cortan en el centro del cuadrado.</p>
+        <br>
+        <p><strong>*Ejes de simetría: </strong> son líneas imaginarias que dividen el cuadrado en dos partes simétricas respecto a dicho eje. Tiene cuatro ejes de <br>simetría (E1, E2, E3 y E4).</p>
+        <br>
+        <br>
+    </section>
+    <section id="area" style="background: #ffffff" class="div3">
+        <h2 align="center">Área de un cuadrado</h2>
+        <br>
+        <p>El área del cuadrado se calcula a partir de uno de sus lados (a). Es el producto de la base por la altura del cuadrado, ya que al ser ambas iguales, el área será un lado al cuadrado.</p>
+        <center>
+            <img src="../figurasG/cuadrado/cuadrado2.png"><img src="../figurasG/cuadrado/cuadrado3.png">
+        </center>
+    </section>
+    <section id="perimetro" style="background: #ffffff" class="div3">
+        <h2 align="center">Perímetro de un cuadrado</h2>
+        <br>
+        <p>El cuadrado tiene los cuatro lados iguales, por lo que su perímetro es cuatro veces uno de sus lados.</p>
+        <center>
+            <img src="../figurasG/cuadrado/cuadrado4.png"><img src="../figurasG/cuadrado/cuadrado5.png">
+        </center>
+    </section>
+</body>
+
+</html>
